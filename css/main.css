@@ -1,0 +1,46 @@
+/**/
+body, html {
+	width: 100%;
+	text-align: center;
+}
+svg {
+	width: 30%;
+}
+
+.st0{
+	fill:#898989;
+}
+.st1{
+	fill:#587890;
+}
+.st2{
+	fill:#5A7B93;
+}
+.st3{
+	fill:#7198B5;
+}
+.st4{
+	fill:#B8B8B8;
+}
+/*g#logo {
+	transition: all 1s ease;
+}*/
+@keyframes animateLogo {
+	from {
+		transform: translateX(0) translateY(0);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(110px) translateY(-35px);
+		opacity: 1;
+	}
+}
+#logo {
+	opacity: 0;
+}
+svg:hover #logo {
+	animation-duration: 1.2s;
+	animation-name: animateLogo;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
